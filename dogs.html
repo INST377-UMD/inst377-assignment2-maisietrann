@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  
+  <title>INST377 - Doggos</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script defer src="dogs.js"></script>
+</head>
+<body>
+    <h1><strong>INST377- Dogs</strong></h1>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Cute Doggies! 🐶</h1>
+
+    <!-- Carousel -->
+    <div id="carousel" class="dog-carousel"></div>
+
+    <!-- Breed Buttons -->
+    <div id="breed-buttons"></div>
+
+    <!-- Breed Info -->
+    <div id="breed-info" class="breed-info-box" style="display:none;"></div>
+  </main>
+
+  <!-- Audio Commands Section -->
+  <div class="audio-controls">
+    <h3>In this web page there are options to Navigate using Audio!</h3>
+    <p>Ensure your Mic is enabled to be able to use this feature</p>
+    <ul>
+      <li>Load Dog Breed
+        <ul><li>Say: <strong>Load dog breed labrador</strong></li></ul>
+      </li>
+      <li>Navigate to another page
+        <ul><li>Say: <strong>Navigate to home</strong></li></ul>
+      </li>
+      <li>Say Hello
+        <ul><li>Say: <strong>Hello</strong></li></ul>
+      </li>
+    </ul>
+    <button onclick="startVoice()">Turn On Listening</button>
+    <button onclick="stopVoice()">Turn Off Listening</button>
+  </div>
+</body>
+</html>
