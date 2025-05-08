@@ -1,0 +1,59 @@
+<html>
+<head>
+  <title>Class Activities Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <br>
+  <h1><strong>INST377- Home</strong></h1>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h1>These are some different activities we can try!</h1>
+    <div class="button-wrapper">
+      <button onclick="location.href='stocks.html'" class="button-64"><span class="text">Stocks</span></button>
+      <button onclick="location.href='dogs.html'" class="button-64"><span class="text">Dogs</span></button>
+    </div>
+
+    <div class="quote-box">
+      <h3>Quote of the Day</h3>
+      <p id="quote">Loading...</p>
+    </div>
+  </main>
+
+  <!-- Audio Controls -->
+  <div class="audio-controls">
+    <h3>In this web page there are options to Navigate using Audio!</h3>
+    <h5>Ensure your microphone is enabled to be able to use this feature!</h5>
+    <ul>
+      <li>Navigate to a Different Page
+        <ul>
+          <li><em>Say: <strong>Navigate to &lt;page&gt;</strong></em></li>
+        </ul>
+      </li>
+      <li>Change the Page Color
+        <ul>
+          <li><em>Say: <strong>Change the color to &lt;color&gt;</strong></em></li>
+        </ul>
+      </li>
+      <li>Say Hello Back to you!
+        <ul>
+          <li><em>Say: <strong>Hello</strong></em></li>
+        </ul>
+      </li>
+    </ul>
+    <button onclick="startVoice()">Turn On Audio</button>
+    <button onclick="stopVoice()">Turn Off Audio</button>
+  </div>
+</body>
+</html>
